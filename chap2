@@ -1,3 +1,15 @@
+#Notes:
+# Scalar (0D tensore) / vector (1D) / matrix(2D) / tensore multi d array
+# Matrix multiplication / dot product: measure of similarity / attention mechanism
+# Goal of LLM / optimization problem / make loss function as low as possible / 
+# Derivatives: Measures rate of change of a function / slope of the hill in single direction
+# Gradient: Multi D generalization of derivatives / vector that points in the direction of the steepest ascent from current position 
+# Training Process: Init weights randomly / Feed data / loss function using true answers / calculate gradient / update weights by subtracting small function of its corresponding gradient / repeat
+# Chain rule: Propogate error signal backwards / 
+# Softmax: Convert logits to probability distribution / steps: exponentiate every element (making +ve) and then divide each element by the sum of all exponentiated elements / highest logits - highest probability
+# Logits: Final output of model will be a vector of raw uncalibrated numbers for every work in vocab 
+# Cross Entropy loss: measures distance between predicted n true value / 
+
 import numpy as np
 
 # Create a 1-dimensional NumPy array with values from 0 to 9
