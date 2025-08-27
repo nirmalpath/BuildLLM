@@ -1,3 +1,13 @@
+# Notes
+# Neural Network: weighted sum / bias: offset making it easier or harder for neuron to fire / activation: final o/p
+# Layers in feed forward network: i/p / hidden: connected to all o/p from previous layer and bias vector (128) / o/p: neurons depends on task
+# Activation Functions: to learn non-linear patterns / sigmoid: f(x) = 1 / (1 + e^-x); has vanishing gradient problem; (0,1) /
+#                       Tanh: f(x) = (e^x-e^-x)/(e^x+e^-x); (0,1) / ReLU: f(x) = max(0,x);  efficient / softmax: multi-class problem
+# Training Loop: Init with random numbers / forward pass: input @ weights + bias; followed by activation / loss calc: cross entripy for class n MSE for regression /
+#                backward pass: gradient of loss wrt all weights n bias / update weights: optimizer / new wt = old wt - (learning rate * gradient) /
+#                repeat
+# Adam: Adaptive Moment Estimation / beyond gradient descent / momentum: velocity of gradients n adaptive learning rates: separate rates
+
 import torch
 import torch.nn as nn
 import torch.optim as optim
